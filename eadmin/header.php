@@ -331,7 +331,11 @@
                                 </a>
                                  <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="category.php" data-key="t-inbox">  Category</a></li>
+<<<<<<< HEAD
                                     <li><a href="items.php" data-key="t-read-email"> Items</a></li>
+=======
+                                    <li><a href="products.php" data-key="t-read-email"> Products</a></li>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                                     <!-- <li><a href="newinvoice.php" data-key="t-inbox">  New Invoice</a></li>
                                     <li><a href="manage-invoice.php" data-key="t-read-email">Manage Invoice</a></li> -->
                                     <li><a href="stock-update.php" data-key="t-inbox">  Stock Update</a></li>
@@ -348,8 +352,13 @@
                                     
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
+<<<<<<< HEAD
                                     <li><a href="new-invoice.php" data-key="t-inbox">New Invoice</a></li>
                                     <li><a href="manage-invoice.php" data-key="t-read-email"> Manage Invoice</a></li>
+=======
+                                    <li><a href="new_bill.php" data-key="t-inbox">New Invoice</a></li>
+                                    <li><a href="manage_bill.php" data-key="t-read-email"> Manage Invoice</a></li>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                                    
                                 </ul>
                             </li>

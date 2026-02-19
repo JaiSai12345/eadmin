@@ -178,8 +178,13 @@
                                             </div>
                                         </div>
                                         <div id="table-search-count"></div>
+<<<<<<< HEAD
                                         <div class="table-responsive" style="height: auto;">
                                             <table class="table table-bordered align-middle" style="height: auto; " >
+=======
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered align-middle">
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                                                 <thead>
                                                     <tr>
 
@@ -197,7 +202,11 @@
                                                         <th>Action</th>
                                                     </tr>
                                                 </thead>
+<<<<<<< HEAD
                                                 <tbody id="tableBody">
+=======
+                                                <tbody>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                                                     <?php 
                                                     $sn=1;
                                                     for($i=1; $i <= 50; $i++) { ?>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php include('configure.php');
 
 session_start();
@@ -50,6 +51,13 @@ if (isset($_POST['update_state'])) {
 
 <!-- If page is null this content has to be displayed -->
  <?php if(!isset($_GET['mode']) || $_GET['mode']==''){ ?> 
+=======
+<?php include('configure.php');?>
+<?php include('header.php');?>
+
+<!-- If page is null this content has to be displayed -->
+<?php if($_GET['mode']==''){ ?>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
 
 <!-- MAIN CONTENT START -->
 <div class="main-content">
@@ -90,6 +98,7 @@ if (isset($_POST['update_state'])) {
                                  </tr>
                               </thead>
                               <tbody  id="tableBody">
+<<<<<<< HEAD
                               <?php foreach ($_SESSION['state'] as $i => $state) { ?>
                                  <tr>
                                     <td><?= $i + 1 ?></td>
@@ -115,55 +124,100 @@ if (isset($_POST['update_state'])) {
                                  </tr>
                                  <?php } ?>
                                  <!-- <tr>
+=======
+                                 <tr>
+                                    <td>1</td>
+                                    <td>Kerala</td>
+                                    <td>No</td>
+                                    <td><span class="badge bg-danger">In-Active</span></td>
+                                    <td class="text-center"><a href="state.php?mode=update_state"><i class="fa fa-edit text-primary"></i></a></td>
+                                 </tr>
+                                 <tr>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                                     <td>2</td>
                                     <td>Karnataka</td>
                                     <td class="text-primary">Yes</td>
                                     <td ><span class="badge bg-success ">Active</span></td>
                                     <td class="text-center"><a href="state.php?mode=update_state"><i class="fa fa-edit text-primary "></i></a></td>
+<<<<<<< HEAD
                                  </tr> -->
                                  <!-- <tr>
+=======
+                                 </tr>
+                                 <tr>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                                     <td>3</td>
                                     <td>Maharashtra</td>
                                     <td>No</td>
                                     <td ><span class="badge bg-success">Active</span></td>
                                     <td class="text-center"><a href="state.php?mode=update_state"><i class="fa fa-edit text-primary"></i></a></td>
+<<<<<<< HEAD
                                  </tr> -->
                                  <!-- <tr>
+=======
+                                 </tr>
+                                 <tr>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                                     <td>4</td>
                                     <td>Tamilnadu</td>
                                     <td>No</td>
                                     <td ><span class="badge bg-success">Active</span></td>
                                     <td class="text-center"><a href="state.php?mode=update_state"><i class="fa fa-edit text-primary"></i></a></td>
+<<<<<<< HEAD
                                  </tr> -->
                                  <!-- <tr>
+=======
+                                 </tr>
+                                 <tr>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                                     <td>5</td>
                                     <td>Delhi</td>
                                     <td>No</td>
                                     <td ><span class="badge bg-success">Active</span></td>
                                     <td class="text-center"><a href="state.php?mode=update_state"><i class="fa fa-edit text-primary"></i></a></td>
+<<<<<<< HEAD
                                  </tr> -->
                                  <!-- <tr>
+=======
+                                 </tr>
+                                 <tr>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                                     <td>6</td>
                                     <td>Andhra Pradesh</td>
                                     <td>No</td>
                                     <td ><span class="badge bg-danger">In-Active</span></td>
                                     <td class="text-center"><a href="state.php?mode=update_state"><i class="fa fa-edit text-primary"></i></a></td>
+<<<<<<< HEAD
                                  </tr> -->
                                  <!-- <tr>
+=======
+                                 </tr>
+                                 <tr>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                                     <td>7</td>
                                     <td>Himachal Pradesh</td>
                                     <td>No</td>
                                     <td ><span class="badge bg-danger">In-Active</span></td>
                                     <td class="text-center"><a href="state.php?mode=update_state"><i class="fa fa-edit text-primary"></i></a></td>
+<<<<<<< HEAD
                                  </tr> -->
                                  <!-- <tr>
+=======
+                                 </tr>
+                                 <tr>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                                     <td>8</td>
                                     <td>Uttar Pradesh</td>
                                     <td>No</td>
                                     <td><span class="badge bg-success">Active</span></td>
                                     <td class="text-center"><a href="state.php?mode=update_state"><i class="fa fa-edit text-primary"></i></a></td>
+<<<<<<< HEAD
                                  </tr> -->
                                  <!-- <tr>
+=======
+                                 </tr>
+                                 <tr>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                                     <td>9</td>
                                     <td>Chattisghad</td>
                                     <td>No</td>
@@ -176,8 +230,13 @@ if (isset($_POST['update_state'])) {
                                     <td>No</td>
                                     <td ><span class="badge bg-success">Active</span></td>
                                     <td class="text-center"><a href="state.php?mode=update_state"><i class="fa fa-edit text-primary"></i></a></td>
+<<<<<<< HEAD
                                  </tr> -->
                                  <!-- <tr>
+=======
+                                 </tr>
+                                 <tr>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                                     <td>11</td>
                                     <td>Rajasthan</td>
                                     <td>No</td>
@@ -197,14 +256,23 @@ if (isset($_POST['update_state'])) {
                                     <td>No</td>
                                     <td ><span class="badge bg-danger">In-Active</span></td>
                                     <td class="text-center"><a href="state.php?mode=update_state"><i class="fa fa-edit text-primary"></i></a></td>
+<<<<<<< HEAD
                                  </tr> -->
                                  <!-- <tr>
+=======
+                                 </tr>
+                                 <tr>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                                     <td>14</td>
                                     <td>Telangana</td>
                                     <td>No</td>
                                     <td><span class="badge bg-success">Active</span></td>
                                     <td class="text-center"><a href="state.php?mode=update_state"><i class="fa fa-edit text-primary"></i></a></td>
+<<<<<<< HEAD
                                  </tr> -->
+=======
+                                 </tr>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                               </tbody>
                            </table>
                         </div>
@@ -234,7 +302,11 @@ if (isset($_POST['update_state'])) {
 
 
 <!--if mode = add_state start-->
+<<<<<<< HEAD
 <?php } elseif(isset($_GET['mode']) && $_GET['mode'] == 'add_state'){ ?>
+=======
+<?php } else if($_GET['mode'] == 'add_state'){ ?>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
 
 <!-- MAIN CONTENT START -->
 <div class="main-content ">
@@ -256,13 +328,17 @@ if (isset($_POST['update_state'])) {
                   </div>
                   
                   <div class="card-body">
+<<<<<<< HEAD
                       <form method="post">
+=======
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                      <div class="row d-flex justify-content-center">
                         <div class="col-md-4  text-center">
                               <label class="form-label ">
                                  State Name <span class="text-danger">*</span>
                               </label>
                               <input type="text"
+<<<<<<< HEAD
                                      name="state_name"
                                      class="form-control text-center"
                                       autocomplete="off">
@@ -273,6 +349,16 @@ if (isset($_POST['update_state'])) {
                        </form>
                      </div>
                
+=======
+                                     name="Sta_name"
+                                     class="form-control text-center"
+                                     required>
+                           </div>
+                        <div class="d-flex justify-content-end mt-3">
+                           <button class="btn btn-primary waves-effect waves-light ">Save</button>
+                        </div>
+                     </div>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                   </div>
                </div>
             </div>
@@ -290,6 +376,7 @@ if (isset($_POST['update_state'])) {
 
 
 <!-- else if mode - update_state -->
+<<<<<<< HEAD
 <?php } else if(isset($_GET['mode']) && $_GET['mode'] == 'update_state'){ 
       $id = $_GET['id'] ?? null;
 
@@ -298,6 +385,9 @@ if (!isset($_SESSION['state'][$id])) {
     exit;
 }
 ?>
+=======
+<?php } else if($_GET['mode'] == 'update_state'){ ?>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
 <!-- MAIN CONTENT START -->
 <div class="main-content">
    <!-- PAGE CONTENT START -->
@@ -315,8 +405,11 @@ if (!isset($_SESSION['state'][$id])) {
                   </div>
                   <!-- end card header -->
                   <div class="card-body">
+<<<<<<< HEAD
                         <form method="post">
                         <input type="hidden" name="id" value="<?= $id ?>">
+=======
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                      <div class="row">
                          <div class="col-md-4 text-center">
                               <label class="form-label">
@@ -324,13 +417,19 @@ if (!isset($_SESSION['state'][$id])) {
                               </label>
                               <input type="text"
                                      name="state_name"
+<<<<<<< HEAD
                                        value="<?= $_SESSION['state'][$id]['name'] ?>"
                                      class="form-control text-center"
                                       autocomplete="off">
+=======
+                                     class="form-control text-center"
+                                     required>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                            </div>
                         <div class="col-md-4 text-center">
                             <label class="form-label d-block">Default<span class="mandatory-color text-danger">*</span></label>
                               <div class="form-check form-check-inline">
+<<<<<<< HEAD
                                  <!-- <input class="form-check-input" type="radio" name="formRadios1" id="formRadios1" > -->
                                   <input class="form-check-input"
                                              type="radio"
@@ -346,6 +445,13 @@ if (!isset($_SESSION['state'][$id])) {
                                             name="default"
                                             value="No"
                                         <?= $_SESSION['state'][$id]['default'] == 'No' ? 'checked' : '' ?>>
+=======
+                                 <input class="form-check-input" type="radio" name="formRadios1" id="formRadios1">
+                                    <label class="form-check-label" for="formRadios1">Yes</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="formRadios1" id="formRadios2">
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                                     <span class="form-check-label" for="formRadios2">No</span>
                               </div>
                         </div>
@@ -354,6 +460,7 @@ if (!isset($_SESSION['state'][$id])) {
                         <div class="col-md-4 text-center">
                             <label class="form-label d-block">Status<span class="mandatory-color text-danger">*</span></label>
                               <div class="form-check form-check-inline">
+<<<<<<< HEAD
                                  <!-- <input class="form-check-input" type="radio" name="formRadios" id="formRadios3"   > -->
                                   <input class="form-check-input"
                                         type="radio"
@@ -368,12 +475,20 @@ if (!isset($_SESSION['state'][$id])) {
                                           name="status"
                                           value="In-Active"
                                  <?= $_SESSION['state'][$id]['status'] == 'In-Active' ? 'checked' : '' ?>>
+=======
+                                 <input class="form-check-input" type="radio" name="formRadios" id="formRadios3">
+                                    <span class="form-check-label" for="formRadios3">Active</span>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="formRadios" id="formRadios4">
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                                     <span class="form-check-label" for="formRadios4">Inactive</span>
                               </div>
                         </div>
                      </div>
                      <br>
                      <div class="d-flex justify-content-end">
+<<<<<<< HEAD
                         <!-- <button class="btn btn-primary waves-effect waves-light">Update</button> -->
                          <button type="submit" name="update_state"
                                class="btn btn-primary">
@@ -381,6 +496,10 @@ if (!isset($_SESSION['state'][$id])) {
                                    </button>
                                </div>
                        </form>
+=======
+                        <button class="btn btn-primary waves-effect waves-light">Update</button>
+                     </div>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                   </div>
                </div>
             </div>
@@ -398,5 +517,9 @@ if (!isset($_SESSION['state'][$id])) {
 <?php include('links.php');?>
 <script src="assets/js/custom.js"></script> 
 </body>
+<<<<<<< HEAD
 
 </html>
+=======
+</html>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b

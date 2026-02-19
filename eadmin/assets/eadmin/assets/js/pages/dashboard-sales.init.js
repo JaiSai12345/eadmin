@@ -116,7 +116,10 @@ options1 = {
     chart: {
         type: "bar",
         height: 50,
+<<<<<<< HEAD
         width:100,
+=======
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
         sparkline: {
             enabled: !0
         }

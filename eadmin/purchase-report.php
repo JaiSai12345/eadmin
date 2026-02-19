@@ -56,11 +56,19 @@
                                     <label class="form-label d-block">Report Type<span class="mandatory-color text-danger">*</span></label>
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="formRadios" id="formRadios1" checked>
+<<<<<<< HEAD
                                         <span class="form-check-label" for="formRadios1">Summary</span>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="formRadios"id="formRadios2">
                                         <span class="form-check-label" for="formRadios2">Details</span>
+=======
+                                        <label class="form-check-label" for="formRadios1">Summary</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="formRadios"id="formRadios2">
+                                        <label class="form-check-label" for="formRadios2">Details</label>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                                     </div>
                                     
                                 </div>

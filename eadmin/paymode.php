@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 include('configure.php');
 session_start();
@@ -263,3 +264,234 @@ include('header.php');
 </html>
  
  
+=======
+<?php include('configure.php');?>
+<?php include('header.php');?>
+
+<!-- If page is null this content has to be displayed -->
+<?php if($_GET['mode']==''){ ?>
+
+<!-- MAIN CONTENT START -->
+<div class="main-content">
+   <!-- PAGE CONTENT START -->
+   <div class="page-content">
+      <!-- CONTAINER-FLUID START -->
+      <div class="container-fluid">
+         <!-- ROW START -->
+         <div class="row" >
+            <div class="col-lg-12">
+               <!-- CARD START -->
+               <div class="card">
+                  <!-- CARD HEADER START -->
+                  <div class="card-header d-flex justify-content-between align-items-center ">
+                     <span class="card-title mb-0"><b>Payment Mode </b>- View Details</span>
+                     <a href="paymode.php?mode=add_paymode">
+                     <button class="btn btn-primary btn-sm waves-effect waves-light"><i class="fa fa-plus me-1"></i> Create</button>
+                     </a>
+                  </div>
+                  <!-- CARD HEADER END -->
+
+                   <!-- CARD BODY START -->
+                  <div class="card-body">
+                     <div id="table-search-count"></div>
+                     <!--selector and searchbar is located in custom.js-->
+                        <div class="table-responsive" style="height: auto;">
+                           <table class="table table-bordered align-middle" style="height: auto; ">
+                              <thead>
+                                 <tr >
+                                    <th>
+                                       S.No.
+                                       <!-- <button tabindex="-1" aria-label="Sort column ascending" title="Sort column ascending" class="gridjs-sort gridjs-sort-neutral"></button> -->
+                                    </th>
+                                    <th> Payment Mode</th>
+                                    <th >Status</th>
+                                    <th  >Action</th>
+                                 </tr>
+                              </thead>
+                              <tbody  id="tableBody">
+                                 <tr>
+                                    <td>1</td>
+                                    <td>Cash</td>
+                                    <td><span class=" badge bg-success">Active</span></td>
+                                    <td class="text-center"><a href="paymode.php?mode=update_paymode"><i class="fa fa-edit text-primary"></i></a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>2</td>
+                                    <td>UPI</td>
+                                    <td ><span class="  badge bg-success ">Active</span></td>
+                                    <td class="text-center"><a href="paymode.php?mode=update_paymode"><i class="fa fa-edit text-primary "></i></a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>3</td>
+                                    <td>Cheque</td>
+                                    <td ><span class=" badge bg-success">Active</span></td>
+                                    <td class="text-center"><a href="paymode.php?mode=update_paymode"><i class="fa fa-edit text-primary"></i></a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>4</td>
+                                    <td>IMPS</td>
+                                    <td ><span class=" badge bg-success">Active</span></td>
+                                    <td class="text-center"><a href="paymode.php?mode=update_paymode"><i class="fa fa-edit text-primary"></i></a></td>
+                                 </tr>
+                                 <tr>
+                                    <td>5</td>
+                                    <td>RTGS</td>
+                                    <td ><span class=" badge bg-success">Active</span></td>
+                                    <td class="text-center"><a href="paymode.php?mode=update_paymode"><i class="fa fa-edit text-primary"></i></a></td>
+                                </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     <!-- PAGE FOOTER-->
+                     <div class="d-flex justify-content-between align-items-center mt-2">
+                        <small id="tableInfo"></small>
+                        <nav>
+                           <ul class="pagination pagination-sm mb-0" id="pagination"></ul>
+                        </nav>
+                     </div>
+                     <!-- PAGE FOOTER-->
+                  </div>
+                  <!-- CARD BODY END -->
+               </div>
+               <!-- CARD END -->
+            </div>
+            
+         </div>
+         <!-- ROW END -->
+      </div>
+      <!-- CONTAINER-FLUID END -->
+   </div>
+   <!-- PAGE CONTENT END -->
+</div>
+<!-- MAIN CONTENT END -->
+
+
+
+
+<!--if mode = add_state start-->
+<?php } else if($_GET['mode'] == 'add_paymode'){ ?>
+
+<!-- MAIN CONTENT START -->
+<div class="main-content ">
+   <!-- PAGE CONTENT START -->
+   <div class="page-content">
+      <!-- CONTAINER-FLUID START -->
+      <div class="container-fluid">
+          <!-- ROW START -->
+         <div class="row">
+             <!-- COLUMN START -->
+            <div class="col-lg-12">
+               <div class="card">
+                  <div class="card-header d-flex justify-content-between align-items-center">
+                        <span class="card-title mb-0"><b>Payment Mode </b>- Add New </span>
+                   
+                     <a href="paymode.php">
+                     <button class="btn btn-outline-primary btn-sm waves-effect waves-light"><i class="bx bxs-left-arrow-circle  me-1"></i> Back</button>
+                     </a>
+                  </div>
+                  
+                  <div class="card-body">
+                     <div class="row justify-content-center">
+                       
+                        <div class="col-md-4 text-center">
+                              <label class="form-label fw-bold">Payment Mode
+                                  <span class="text-danger">*</span>
+                              </label>
+                              <input type="text"
+                                    
+                                     class="form-control text-center"
+                                     required>
+                           </div>
+                        <div class="d-flex justify-content-end mt-3">
+                           <button class="btn btn-primary waves-effect waves-light ">Save</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- COLUMN END -->
+         </div>
+          <!-- ROW END -->
+      </div>
+      <!-- CONTAINER-FLUID END -->
+   </div>
+   <!-- PAGE CONTENT END -->
+</div>
+<!-- MAIN CONTENT END -->
+
+
+
+
+<!-- else if mode - update_paymode -->
+<?php } else if($_GET['mode'] == 'update_paymode'){ ?>
+<!-- MAIN CONTENT START -->
+<div class="main-content">
+   <!-- PAGE CONTENT START -->
+   <div class="page-content">
+      <!-- CONTAINER-FLUID START -->
+      <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+               <div class="card">
+                  <div class="card-header d-flex justify-content-between align-items-center mb-3">
+                     <span class="card-title mb-0"><b>Payment Mode</b>- Update Details</span>
+                     <a href="paymode.php">
+                     <button class="btn btn-outline-primary btn-sm waves-effect waves-light"><i class="bx bxs-left-arrow-circle  me-1"></i> Back</button>
+                     </a>
+                  </div>
+                 <!-- end card header -->
+                 
+
+         <div class="card-body">
+    <div class="row justify-content-center text-center">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label >
+                    Payment Mode <span class="text-danger">*</span>
+                </label>
+                <input class="form-control text-center"
+                       type="text"
+                       value="Cash" require="">
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="form-group">
+                <label class="form-label d-block">Status<span class="mandatory-color text-danger">*</span></label>
+                              <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="formRadios" id="formRadios3">
+                                    <span class="form-check-label" for="formRadios3">Active</span>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="formRadios" id="formRadios4">
+                                    <span class="form-check-label" for="formRadios4">Inactive</span>
+                              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-end mt-3">
+        <button class="btn btn-primary waves-effect waves-light" type="submit">
+            Update
+        </button>
+    </div>
+      </div>
+               </div>
+            </div>
+         </div> 
+
+
+      <!-- CONTAINER-FLUID END -->
+      <?php } ?>
+   </div>
+     <!-- PAGE CONTENT END -->
+   <?php include('footer.php');?>
+</div>
+<!-- MAIN CONTENT END -->
+</div>
+<!-- LAYOUT WRAPPER END -->
+<?php include('links.php');?>
+<script src="assets/js/custom.js"></script> 
+</body>
+</html>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b

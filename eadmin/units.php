@@ -65,7 +65,11 @@ include('header.php');
                   <div class="card-body">
                      <div class="table-responsive">
                         <table class="table table-bordered align-middle">
+<<<<<<< HEAD
                            <thead >
+=======
+                           <thead class="table-light">
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                               <tr>
                                  <th>S.No.</th>
                                  <th>Unit Name</th>
@@ -131,7 +135,11 @@ include('header.php');
                               <input type="text"
                                      name="unit_name"
                                      class="form-control text-center"
+<<<<<<< HEAD
                                      required autocomplete="off">
+=======
+                                     required>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                            </div>
                         </div>
  
@@ -196,7 +204,11 @@ include('header.php');
                                         name="status"
                                         value="Active"
                                         <?= $_SESSION['units'][$id]['status'] == 'Active' ? 'checked' : '' ?>>
+<<<<<<< HEAD
                                  <span class="form-check-label">Active</span>
+=======
+                                 <label class="form-check-label">Active</label>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                               </div>
  
                               <div class="form-check form-check-inline">
@@ -205,7 +217,11 @@ include('header.php');
                                         name="status"
                                         value="In-Active"
                                         <?= $_SESSION['units'][$id]['status'] == 'In-Active' ? 'checked' : '' ?>>
+<<<<<<< HEAD
                                  <span class="form-check-label">Inactive</span>
+=======
+                                 <label class="form-check-label">Inactive</label>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                               </div>
                            </div>
                         </div>

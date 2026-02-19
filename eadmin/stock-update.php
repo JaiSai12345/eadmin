@@ -44,15 +44,25 @@
                                 </label>
                                 <input type="number" class="form-control text-center" value="100">
                             </div>
+<<<<<<< HEAD
                         </div>
                             <!--  BUTTON -->
                             <div class="d-flex justify-content-end mt-3">
+=======
+
+                            <!-- VIEW BUTTON -->
+                            <div class="col-md-1 text-center">
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
                                 <a href="stock-update.php?mode=view_list">
                                     <button  name="view_inward" class="btn btn-primary waves-effect waves-light">Search</button>
                                 </a>
                             </div>
 
+<<<<<<< HEAD
                         
+=======
+                        </div>
+>>>>>>> 3aae9fbcf26715c664befb684c9004b5053c474b
 
                 
                     </div>
