@@ -1,3 +1,5 @@
+
+
 <?php include('configure.php');?>
 <?php include('header.php');?>
 
@@ -8,62 +10,72 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header d-flex justify-content-between align-items-center mb-3">
-                            <span class="card-title mb-0"><b>Inward Details</b></span>
-                            <a href="dashboard.php">
-                                <button class="btn btn-outline-primary btn-sm waves-effect waves-light"><i class="bx bxs-left-arrow-circle  me-1"></i> Back</button>
-                            </a>
+                            <span class="card-title mb-0"><b>Invoice Details</b></span>
+                            
                         </div>
                         <!-- end card header -->
                         <div class="card-body">
-                            <div class="row mb-3  ">
-                                <div class="col-md-3 ">
-                                    <div class="mb-3 ">
-                                        <label for="choices-single-default" class="form-label text-center w-100">Supplier Name<span class="mandatory-color text-danger">*</span></label>
-                                            <select class="form-control" data-trigger name="choices-single-default" id="choices-single-default" placeholder="">
-                                                <option value="Choice 1">Select</option>
-                                                <option value="Choice 2">SMR Enterprises</option>
-                                                <option value="Choice 3">Renuka Fresh Form</option>
+                            <div class="row mb-3">
+                                <div class="col-md-3 text-center">
+                                    <label class="form-label ">Customer Name<span class="mandatory-color text-danger \">*</span></label>
+                                        <select class="form-select">
+                                            <option>Select</option>
+                                            <option>Sam Boys Hostel</option>
+                                            <option> John High Schooh</option>
+                                            <option>Ravish Food</option>
+                                        </select>
+                                </div>
+                                <div class="col-md-3 text-center">
+                                    <label>Contact No<span class="mandatory-color text-danger">*</span></label>
+                                    <input class="form-control text-center" readonly type="text" >
+                                </div>
+                                <div class="col-md-6  text-center">
+                                    <label class="form-label ">Address<span class="text-danger">*</span></label>
+                                    <textarea class="form-control" type="text" name="address" id="address" autocomplete="off" style="height: 25px;"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="row mb-3">
+                                <div class="col-md-3 text-center">
+                                  
+                                        <label>State<span class="mandatory-color text-danger">*</span></label>
+                                            <select class="form-control" name="state_name" id="state_name" style="text-align:center;font-size: 15px;" >                               
+                                                <option value="2" selected="">Karnataka</option>
+                                                <option value="3">Maharashtra</option>
+                                                <option value="4">Tamilnadu</option>
+                                                <option value="5">Delhi</option>
                                             </select>
                                     
-                                    </div>
-
+                                </div>
+                                <div class="col-md-3 text-center ">
                                     
-
-                                </div>
-                                <div class="col-md-3 text-center">
-                                    <label class="form-label">Contact No<span class="mandatory-color text-danger">*</span></label>
-                                    <input class="form-control text-center" readonly type="text" style="background-color: #e9ecef">
-                                </div>
-                                <div class="col-md-3 text-center">
-                                    <label class="form-label">GST No<span class="mandatory-color text-danger">*</span></label>
-                                    <input class="form-control text-center" readonly type="text" style="background-color: #e9ecef">
-                                </div>
-                                <div class="col-md-3 text-center">
-                                    <label class="form-label">State<span class="mandatory-color text-danger">*</span></label>
-                                    <input class="form-control text-center" readonly type="text" style="background-color: #e9ecef;" value="Karnataka">
-                                    
-                                </div>
-                            </div>
-                            <div class="row">
+                                    <label>GST No</label>
+                                    <input class="form-control text-center" type="text" name="gst_no" id="gst_no" autocomplete="off" style="text-transform: uppercase;">
                                 
-                                <div class="col-md-3 text-center">
-                                    <label class="form-label ">Invoice Date<span class="mandatory-color text-danger">*</span></label>
-                                    <input type="text" class="form-control text-center" id="datepicker-basic" style="background-color: #e9ecef;" readonly="readonly" placeholder="dd/mm/yyyy" required>
+                                </div> 
+                            </div>  
+                           
+                            <div class="row mb-3">
+                                <div class="col-md-6  text-center">
+                                    <label class="form-label ">Delivery Address<span class="text-danger">*</span></label>
+                                    <textarea class="form-control" type="text" name="address" id="address" autocomplete="off" style="height: 25px;"></textarea>
+                                </div>
+
+                                <div class="col-md-3 text-center" >
+                                    <label>Delivery State<span class="mandatory-color text-danger">*</span></label>
+                                    <select class="form-control" name="del_state" id="del_state" style="text-align:center;font-size: 15px;"> 
+                                        <option value="2" selected="">Karnataka</option>
+                                        <option value="3">Maharashtra</option>
+                                        <option value="4">Tamilnadu</option>
+                                        <option value="5">Delhi</option>
+                                    </select>
                                 </div>
 
                                 <div class="col-md-3 text-center">
-                                    <label class="form-label" >Invoice No<span class="mandatory-color text-danger">*</span></label>
-                                    <input class="form-control text-center">
+                                    <label>Bill Date <span class="mandatory-color text-danger">*</span></label>
+                                    <input class="datepicker form-control text-center" type="text" name="bill_date" readonly="" required="true" value="12/02/2026" style="background-color: #e9ecef">
                                 </div>
-                                <div class="col-md-3 text-center">
-                                    <label class="form-label" >PO No<span class="mandatory-color text-danger">*</span></label>
-                                    <input class="form-control text-center">
-                                </div>
-                                <div class="col-md-3 text-center">
-                                    <label class="form-label ">PO Date<span class="mandatory-color text-danger">*</span></label>
-                                    <input type="text" class="form-control text-center " id="datepicker-basic" style="background-color: #e9ecef;" readonly="readonly" placeholder="dd/mm/yyyy" required>
-                                </div>
-                            </div>
+                            </div> 
                         </div>
                     </div>
 
@@ -94,8 +106,8 @@
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
-                                <table class="table table-bordered  table-sm text-center" style="table-layout: fixed;">
-                                    <thead>
+                                <table class="table table-bordered text-center" style="table-layout: fixed;">
+                                    <thead style=" background:#f8f9fa;font-size:14px;}">
                                         <tr>
                                             <th>S.N</th>
                                             <th>Category</th>
@@ -181,35 +193,35 @@
 
                             <!-- Buttons -->
                             <div class="d-flex justify-content-end gap-2 mb-3">
-                                <button id="addRow" class="btn btn-primary waves-effect waves-light">+ Add More</button>
-                                <button id="deleteRow" class="btn btn-danger waves-effect waves-light">- Delete Last</button>
+                                <button id="addRow" class="btn btn-primary btn-sm waves-effect waves-light">+ Add More</button>
+                                <button id="deleteRow" class="btn btn-danger btn-sm waves-effect waves-light">- Delete Last</button>
                             </div>
                             <br>
                             <!-- Totals -->
                             <div class="row g-3 text-center">
                                 <div class="col-md-3">
-                                    <label>Total Qty</label>
+                                    <label>Total Qty<span class="mandatory-color text-danger">*</span></label>
                                     <input id="totalQty" class="form-control" value="0">
                                 </div>
 
                                 <div class="col-md-3">
-                                    <label>Total Taxable</label>
+                                    <label>Total Taxable<span class="mandatory-color text-danger">*</span></label>
                                     <input id="totalTaxable" class="form-control" value="0">
                                 </div>
 
                                 <div class="col-md-3">
-                                    <label>Total GST</label>
+                                    <label>Total GST <span class="mandatory-color text-danger">*</span></label>
                                     <input id="totalGST" class="form-control" value="0">
                                 </div>
 
                                 <div class="col-md-3">
-                                    <label>Invoice Amount</label>
+                                    <label>Total Bill Amt <span class="mandatory-color text-danger">*</span></label>
                                     <input id="invoiceAmt" class="form-control" value="0">
                                 </div>
                             </div>
 
                             <div class="text-end mt-3">
-                                <button class="btn btn-primary  waves-effect waves-light">Save</button>
+                                <button class="btn btn-primary btn-sm waves-effect waves-light">Save</button>
                             </div>
 
                         </div>
@@ -367,21 +379,7 @@
                         document.getElementById("invoiceAmt").value=inv.toFixed(2);
                         }
                     </script>
-<?php include('links.php'); ?> 
-<script>
-    //  $('#supplier').select2({
-    //     placeholder: "Select Supplier",
-       
-    // });
 
-                flatpickr("#datepicker-basic", {
-                    dateFormat: "d/m/Y"
-                });
-
-                flatpickr("#datepicker-basic", {
-                    dateFormat: "d/m/Y"
-                });
-</script>
 
 
 
@@ -392,7 +390,7 @@
     <?php include('footer.php')?>
 </div>
 </div>
-
+<?php include('links.php')?>
 
 
 </body>

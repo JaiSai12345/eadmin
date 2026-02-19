@@ -36,6 +36,12 @@
         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
         <!-- App Css-->
         <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+        <!-- swiper css -->
+             <link rel="stylesheet" href="assets/libs/swiper/swiper-bundle.min.css">
+
+        <!-- nouisliderribute css -->
+        <link rel="stylesheet" href="assets/libs/nouislider/nouislider.min.css">
         
         <!-- Flatpickr Css-->
         <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
@@ -273,7 +279,7 @@
                                 <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="state.php" data-key="t-inbox"> State</a></li>
                                     <li><a href="branch.php" data-key="t-inbox">Branch</a></li>
-                                    <li><a href="users.php" data-key="t-inbox">Users</a></li>
+                                    <!-- <li><a href="users.php" data-key="t-inbox">Users</a></li> -->
                                     <li><a href="units.php" data-key="t-read-email">Unit</a></li>
                                     <li><a href="gst.php" data-key="t-read-email">GST</a></li>
                                     <li><a href="paymode.php" data-key="t-inbox"> Pay Mode</a></li>
@@ -300,13 +306,13 @@
                                     <span class="menu-item" data-key="t-calendar">Users</span>
                                 </a>
                                  <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="email-inbox.html" data-key="t-inbox">  User Info</a></li>
-                                    <li><a href="email-read.html" data-key="t-read-email">Access Control</a></li>
+                                    <li><a href="users.php" data-key="t-inbox">  User Info</a></li>
+                                    <li><a href="user_access.php" data-key="t-read-email">Access Control</a></li>
 
                                 </ul>
                             </li>
 
-                            <li>
+                            <!-- <li>
                                 <a href="javascript: void(0);" class="has-arrow">
                                     <i class="bx bx-group nav-icon"></i>
                                     <span class="menu-item" data-key="t-todo">Customers</span>
@@ -316,7 +322,7 @@
                                     
 
                                 </ul>
-                            </li>
+                            </li> -->
                             
                             <li>
                                  <a href="javascript: void(0);" class="has-arrow">
@@ -325,9 +331,9 @@
                                 </a>
                                  <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="category.php" data-key="t-inbox">  Category</a></li>
-                                    <li><a href="email-read.html" data-key="t-read-email"> Products</a></li>
-                                    <li><a href="newinvoice.php" data-key="t-inbox">  New Invoice</a></li>
-                                    <li><a href="manage-invoice.php" data-key="t-read-email">Manage Invoice</a></li>
+                                    <li><a href="items.php" data-key="t-read-email"> Items</a></li>
+                                    <!-- <li><a href="newinvoice.php" data-key="t-inbox">  New Invoice</a></li>
+                                    <li><a href="manage-invoice.php" data-key="t-read-email">Manage Invoice</a></li> -->
                                     <li><a href="stock-update.php" data-key="t-inbox">  Stock Update</a></li>
                             
 
@@ -337,13 +343,13 @@
  
                             <li>
                                <a href="javascript: void(0);" class="has-arrow">
-                                    <i class="bx bx-rupee icon nav-icon"></i>
+                                    <i class="bx bx-receipt icon nav-icon"></i>
                                     <span class="menu-item" data-key="t-chat">Sales</span>
                                     
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="email-inbox.html" data-key="t-inbox">  New Bill</a></li>
-                                    <li><a href="manage-bill.php" data-key="t-read-email"> Manage Bill</a></li>
+                                    <li><a href="new-invoice.php" data-key="t-inbox">New Invoice</a></li>
+                                    <li><a href="manage-invoice.php" data-key="t-read-email"> Manage Invoice</a></li>
                                    
                                 </ul>
                             </li>

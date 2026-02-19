@@ -24,7 +24,7 @@
                                 <!-- Supplier Name -->
                                 <div class=" col-md-3">
                                     <div class="mb-3">
-                                        <label for="choices-single-default" class="form-label font-size-13">Default<span class="mandatory-color text-danger">*</span></label>
+                                        <label for="choices-single-default" class="form-label text-center w-100">Default<span class="mandatory-color text-danger">*</span></label>
                                             <select class="form-control" data-trigger name="choices-single-default" id="choices-single-default" placeholder="This">
                                                 
                                                 <option value="Choice 1">All</option>
@@ -39,28 +39,28 @@
                                 
 
                                 <!-- From Date -->
-                                <div class="col-md-3">
+                                <div class="col-md-3 text-center">
                                     <!-- <label class="form-label">From Date<span class="mandatory-color text-danger">*</span></label>
                                     <input type="text" class="form-control" id="fromDate" placeholder="dd/mm/yyyy" required> -->
                                     <label class="form-label">From Date<span class="mandatory-color text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="datepicker-basic" readonly="readonly" placeholder="dd/mm/yyyy" required>
+                                    <input type="text" class="form-control  text-center" id="datepicker-basic" readonly="readonly" placeholder="dd/mm/yyyy" required>
                                 </div>
 
                                 <!-- To Date -->
-                                <div class="col-md-3 ">
+                                <div class="col-md-3 text-center">
                                     <label class="form-label">To Date<span class="mandatory-color text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="datepicker-basic" readonly="readonly"  placeholder="dd/mm/yyyy" required>
+                                    <input type="text" class="form-control  text-center" id="datepicker-basic" readonly="readonly"  placeholder="dd/mm/yyyy" required>
                                 </div>
                                 <!-- Report Type -->
-                                <div class=" col md-3">
+                                <div class=" col md-3 text-center">
                                     <label class="form-label d-block">Report Type<span class="mandatory-color text-danger">*</span></label>
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="formRadios" id="formRadios1" checked>
-                                        <label class="form-check-label" for="formRadios1">Summary</label>
+                                        <span class="form-check-label" for="formRadios1">Summary</span>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="formRadios"id="formRadios2">
-                                        <label class="form-check-label" for="formRadios2">Details</label>
+                                        <span class="form-check-label" for="formRadios2">Details</span>
                                     </div>
                                     
                                 </div>

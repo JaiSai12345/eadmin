@@ -166,7 +166,7 @@
                                             <div class="ms-auto">
                                                 <div class="dropdown">
                                                     <a class="dropdown-toggle text-reset" href="#" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                        <span class="">Financial Year :</span><i class="mdi mdi-chevron-down ms-1"></i>
+                                                        <span class="fw-semibold">Financial Year :</span><i class="mdi mdi-chevron-down ms-1"></i>
                                                        
                                                     </a>
                                                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
@@ -178,8 +178,8 @@
                                             </div>
                                         </div>
                                         <div id="table-search-count"></div>
-                                        <div class="table-responsive">
-                                            <table class="table table-striped table-centered  table-nowrap mb-0 table-check" id="tableBody">
+                                        <div class="table-responsive" style="height: auto;">
+                                            <table class="table table-bordered align-middle" style="height: auto; " >
                                                 <thead>
                                                     <tr>
 
@@ -197,7 +197,7 @@
                                                         <th>Action</th>
                                                     </tr>
                                                 </thead>
-                                                <tbody>
+                                                <tbody id="tableBody">
                                                     <?php 
                                                     $sn=1;
                                                     for($i=1; $i <= 50; $i++) { ?>
@@ -223,7 +223,7 @@
                                                             Gray
                                                         </td>
                                                         <td>12/01/2022</td>
-                                                        <td><span class="badge bg-primary-subtle text-primary  font-size-12">Pending</span></td>
+                                                        <td><span class="badge bg-primary">Pending</span></td>
                                                         <!-- <td>
                                                             <div id="chart-sparkline1" data-colors='["#1f58c7"]'></div>
                                                         </td> -->
@@ -264,7 +264,7 @@
                                                             Black
                                                         </td>
                                                         <td>14/01/2022</td>
-                                                        <td><span class="badge bg-success-subtle text-success  font-size-12">Active</span></td>
+                                                        <td><span class="badge bg-success">Active</span></td>
                                                         <!-- <td>
                                                             <div id="chart-sparkline2" data-colors='["#1f58c7"]'></div>
                                                         </td> -->
@@ -304,7 +304,7 @@
                                                             Crime
                                                         </td>
                                                         <td>17/01/2022</td>
-                                                        <td><span class="badge bg-success-subtle text-success  font-size-12">Active</span></td>
+                                                        <td><span class="badge bg-success">Active</span></td>
                                                         <!-- <td>
                                                             <div id="chart-sparkline3" data-colors='["#1f58c7"]'></div>
                                                         </td> -->
@@ -344,7 +344,7 @@
                                                             Crime
                                                         </td>
                                                         <td>18/01/2022</td>
-                                                        <td><span class="badge bg-primary-subtle text-primary  font-size-12">Pending</span></td>
+                                                        <td><span class="badge bg-primary">Pending</span></td>
                                                         <!-- <td>
                                                             <div id="chart-sparkline4" data-colors='["#1f58c7"]'></div>
                                                         </td> -->
@@ -384,7 +384,7 @@
                                                             Crime
                                                         </td>
                                                         <td>18/01/2022</td>
-                                                        <td><span class="badge bg-primary-subtle text-primary  font-size-12">Pending</span></td>
+                                                        <td><span class="badge bg-primary">Pending</span></td>
                                                         <!-- <td>
                                                             <div id="chart-sparkline5" data-colors='["#1f58c7"]'></div>
                                                         </td> -->
